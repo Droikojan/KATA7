@@ -21,7 +21,7 @@ public class CalculateCommand implements Command {
     @Override
     public void execute() {
         
-        Histogram histogram = new HistogramBuilder(populationDialog.population().build(attributeDialog.attribute()));
+        Histogram histogram = new HistogramBuilder(populationDialog.population()).build(attributeDialog.attribute());
         display.show(histogram);
         
     }
